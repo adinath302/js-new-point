@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript cookie</title>
+    <style>
+        * {
+            background-color: black;
+            text-align: center;
+            font-size: 70px;
+            color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    hello world
+    <script>
+        // document.cookie = "name.harry11223344"
+        // console.log(document.cookie)
+        // document.cookie = "name2.harry11223343"
+        // document.cookie = "name=harry"
+        // console.log(document.cookie)
+
+        // document.cookie = "username=John; expires=Wed, 31 Dec 2024 23:59:59 GMT; path=/";
+        // const cookies = document.cookie;
+        // const username = cookies.split('; ').find(cookie => cookie.startsWith('username=')).split('=')[1];
+        // console.log(username);
+
+        document.cookie = "name=harry"
+        let key = prompt("enter your key")
+        let value = prompt("enter your key")
+        document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+        console.log(document.cookie);
+    </script>
+</body>
+
+</html>
